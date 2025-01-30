@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager',
+        'title' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager',
         'label' => 'heading',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'heading,content,button_text,background_image_color,button_color,text_color,button_shape',
-        'iconfile' => 'EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/tx_gdprextensionscompinterest_domain_model_gdprmanager.gif'
+        'iconfile' => 'EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/tx_gdprextensionscompintboard_domain_model_gdprmanager.gif'
     ],
     'types' => [
         '1' => ['showitem' => 'heading, content, button_text, enable_background_image, heading_color, background_image, map_api, background_image_color, button_color, text_color, button_text_color, button_shape, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
@@ -96,8 +96,8 @@ return [
 
         'heading' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.heading',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.heading.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.heading',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.heading.description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -108,8 +108,8 @@ return [
         ],
         'content' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.content',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.content.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.content',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.content.description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -131,8 +131,8 @@ return [
         ],
         'button_text' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.button_text',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.button_text.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.button_text',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.button_text.description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -143,8 +143,8 @@ return [
         ],
         'enable_background_image' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.enable_background_image',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompinterest_domain_model_gdprmanager.enable_background_image.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.enable_background_image',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscompintboard_domain_model_gdprmanager.enable_background_image.description',
             'config' => [
                 'type' => 'input',
                 'size' => 4,
@@ -155,8 +155,8 @@ return [
 
         'background_image' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image.description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -168,8 +168,8 @@ return [
 
         'background_image_color' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -179,8 +179,8 @@ return [
         ],
         'button_color' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -190,7 +190,7 @@ return [
         ],
         'text_color' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color',
             'description' => 'LLL:EXT:gdpr_extensions_com_youtube/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color.description',
             'config' => [
                 'type' => 'input',

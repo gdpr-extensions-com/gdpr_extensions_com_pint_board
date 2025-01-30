@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang.xlf"
-	 			date="2023-12-15T08:19:36Z" product-name="gdpr_extensions_com_pinterest" target-language="de">
+	<file source-language="en" datatype="plaintext" original="EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang.xlf"
+	 			date="2023-12-15T08:19:36Z" product-name="gdpr_extensions_com_pint_board" target-language="de">
 		<header/>
 		<body>
 		<trans-unit id="content.tab">
@@ -76,11 +76,11 @@
             <source>Back to list</source>
             <target>Zurück zur Liste</target>
         </trans-unit>
-				<trans-unit id="tx_gdprextensionscompinterest_domain_model_gdprpinterest" resname="tx_gdprextensionscompinterest_domain_model_gdprpinterest">
+				<trans-unit id="tx_gdprextensionscompintboard_domain_model_gdprpinterest" resname="tx_gdprextensionscompintboard_domain_model_gdprpinterest">
 						<source>Gdpr Pinterest</source>
 						<target>DSGVO Pinterest</target>
 				</trans-unit>
-				<trans-unit id="tx_gdprextensionscompinterest_domain_model_gdprpinterest.description" resname="tx_gdprextensionscompinterest_domain_model_gdprpinterest.description">
+				<trans-unit id="tx_gdprextensionscompintboard_domain_model_gdprpinterest.description" resname="tx_gdprextensionscompintboard_domain_model_gdprpinterest.description">
 						<source>Gdpr Pinterest</source>
 						<target>DSGVO Pinterest</target>
 				</trans-unit>

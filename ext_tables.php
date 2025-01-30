@@ -20,7 +20,7 @@ defined('TYPO3') || die();
                 '',
                 null,
                 [
-                    'labels' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_mod_web.xlf',
+                    'labels' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_mod_web.xlf',
                     'iconIdentifier' => 'gdpr_extensions_com_tab',
                     'navigationComponent' => '@typo3/backend/page-tree/page-tree-element',
                     'name' => 'gdpr'
@@ -29,19 +29,19 @@ defined('TYPO3') || die();
         }
 
             \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-                'GdprExtensionsComPinterest',
+                'GdprExtensionsComPintBoard',
                 'gdpr',
                 'pinterest',
                 '',
                 [
-                    \GdprExtensionsCom\GdprExtensionsComPinterest\Controller\GdprManagerController::class => 'list,index, show, new, create, edit, update, delete,uploadImage',
-                    \GdprExtensionsCom\GdprExtensionsComPinterest\Controller\gdprpinterestController::class => 'list, index',
+                    \GdprExtensionsCom\GdprExtensionsComPintBoard\Controller\GdprManagerController::class => 'list,index, show, new, create, edit, update, delete,uploadImage',
+                    \GdprExtensionsCom\GdprExtensionsComPintBoard\Controller\gdprpinterestController::class => 'list, index',
 
                 ],
                 [
                     'access' => 'user,group',
-                    'icon'   => 'EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/Pinterest-Logo.svg',
-                    'labels' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_gdprmanager.xlf',
+                    'icon'   => 'EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/Pinterest-Logo.svg',
+                    'labels' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_gdprmanager.xlf',
                 ]
             );
 
@@ -50,9 +50,9 @@ defined('TYPO3') || die();
 
 
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_gdprextensionscompinterest_domain_model_gdprpinterest', 'EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_csh_tx_gdprextensionscompinterest_domain_model_gdprpinterest.xlf');
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_gdprextensionscompinterest_domain_model_gdprpinterest');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_gdprextensionscompintboard_domain_model_gdprpinterest', 'EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_csh_tx_gdprextensionscompintboard_domain_model_gdprpinterest.xlf');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_gdprextensionscompintboard_domain_model_gdprpinterest');
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_gdprextensionscomyoutube_domain_model_gdprmanager', 'EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_csh_tx_gdprextensionscomyoutube_domain_model_gdprmanager.xlf');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_gdprextensionscomyoutube_domain_model_gdprmanager', 'EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_csh_tx_gdprextensionscomyoutube_domain_model_gdprmanager.xlf');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_gdprextensionscomyoutube_domain_model_gdprmanager');
 })();

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GdprExtensionsCom\GdprExtensionsComPinterest\Tests\Unit\Controller;
+namespace GdprExtensionsCom\GdprExtensionsComPintBoard\Tests\Unit\Controller;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use TYPO3\TestingFramework\Core\AccessibleObjectInterface;
@@ -15,14 +15,14 @@ use TYPO3Fluid\Fluid\View\ViewInterface;
 class GdprManagerControllerTest extends UnitTestCase
 {
     /**
-     * @var \GdprExtensionsCom\GdprExtensionsComPinterest\Controller\GdprManagerController|MockObject|AccessibleObjectInterface
+     * @var \GdprExtensionsCom\GdprExtensionsComPintBoard\Controller\GdprManagerController|MockObject|AccessibleObjectInterface
      */
     protected $subject;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder($this->buildAccessibleProxy(\GdprExtensionsCom\GdprExtensionsComPinterest\Controller\GdprManagerController::class))
+        $this->subject = $this->getMockBuilder($this->buildAccessibleProxy(\GdprExtensionsCom\GdprExtensionsComPintBoard\Controller\GdprManagerController::class))
             ->onlyMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -42,7 +42,7 @@ class GdprManagerControllerTest extends UnitTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $gdprManagerRepository = $this->getMockBuilder(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Repository\GdprManagerRepository::class)
+        $gdprManagerRepository = $this->getMockBuilder(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Repository\GdprManagerRepository::class)
             ->onlyMethods(['findAll'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -61,7 +61,7 @@ class GdprManagerControllerTest extends UnitTestCase
      */
     public function showActionAssignsTheGivenGdprManagerToView(): void
     {
-        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager();
+        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager();
 
         $view = $this->getMockBuilder(ViewInterface::class)->getMock();
         $this->subject->_set('view', $view);
@@ -75,9 +75,9 @@ class GdprManagerControllerTest extends UnitTestCase
      */
     public function createActionAddsTheGivenGdprManagerToGdprManagerRepository(): void
     {
-        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager();
+        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager();
 
-        $gdprManagerRepository = $this->getMockBuilder(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Repository\GdprManagerRepository::class)
+        $gdprManagerRepository = $this->getMockBuilder(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Repository\GdprManagerRepository::class)
             ->onlyMethods(['add'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -93,7 +93,7 @@ class GdprManagerControllerTest extends UnitTestCase
      */
     public function editActionAssignsTheGivenGdprManagerToView(): void
     {
-        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager();
+        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager();
 
         $view = $this->getMockBuilder(ViewInterface::class)->getMock();
         $this->subject->_set('view', $view);
@@ -107,7 +107,7 @@ class GdprManagerControllerTest extends UnitTestCase
      */
     public function updateActionUpdatesTheGivenGdprManagerInGdprManagerRepository(): void
     {
-        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager();
+        $gdprManager = new \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager();
 
         $gdprManagerRepository = $this->getMockBuilder(\GdprExtensionsCom\GdprExtensionsComYoutube\Domain\Repository\GdprManagerRepository::class)
             ->onlyMethods(['update'])

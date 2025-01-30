@@ -580,7 +580,7 @@
 <div class="pinterest2Click">
     <div class="mainLogo">
         <picture>
-            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/gdprextension.com.svg" id=""
+            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/gdprextension.com.svg" id=""
                 alt="gdprextension.com.svg" class="" />
         </picture>
     </div>
@@ -595,7 +595,7 @@
                     </span>
                     <span>
                         <picture>
-                            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/arrow.svg" id=""
+                            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/arrow.svg" id=""
                                 alt="arrow.svg" class="" />
                         </picture>
                     </span>
@@ -605,7 +605,7 @@
 
         <div class="col-5">
             <picture>
-                <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/logosgroup.svg" id=""
+                <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/logosgroup.svg" id=""
                     alt="logosgroup.svg" class="" />
             </picture>
         </div>
@@ -614,7 +614,7 @@
         <div class="main-headline">
             <h2>Pinterest Board 2-Click Solution</h2>
             <picture>
-                <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/smyoutube.svg" id=""
+                <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/smyoutube.svg" id=""
                     alt="smyoutube.svg" class="" />
             </picture>
         </div>
@@ -627,15 +627,15 @@
     <!-- accordion -->
     <div class="custom-accordion">
         <button type="button" class="accordion-toggle">
-            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/dropdown.svg" />
+            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/dropdown.svg" />
             <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.ContentMask"
-                extensionName="GdprExtensionsComPinterest" />
+                extensionName="GdprExtensionsComPintBoard" />
         </button>
         <div class="accordion-content">
             <div class="d-flex">
                 <div class="uplodedImageTitle">
                     <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image"
-                        extensionName="GdprExtensionsComPinterest" />
+                        extensionName="GdprExtensionsComPintBoard" />
                 </div>
                 <label class="switch">
                     <input type="checkbox">
@@ -646,8 +646,8 @@
             <div class="uploadImage d-none">
                 <div class="file-upload-wrapper my-4-9" id="selected-image-container">
                     <button class="choose_file">
-                        <f:translate key="choose.file" extensionName="GdprExtensionsComPinterest" />
-                        <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/upload.svg" alt=""
+                        <f:translate key="choose.file" extensionName="GdprExtensionsComPintBoard" />
+                        <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/upload.svg" alt=""
                             class="" />
                     </button>
                     <input type="file" id="file-input" name="image" accept="image/*"
@@ -656,10 +656,10 @@
                 <f:if condition="{gdprManager.backgroundImage} == ''">
                     <f:then>
                         <div class="uploaded-image upload-btn">
-                            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/gdpr-logo-icon.svg"
+                            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/gdpr-logo-icon.svg"
                                 id="selected-image" alt="" class="back_img" />
                             <f:variable name="defaultImageUri"
-                                value="{f:uri.image(src: 'EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/gdpr-logo-icon.svg')}" />
+                                value="{f:uri.image(src: 'EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/gdpr-logo-icon.svg')}" />
                         </div>
                     </f:then>
                     <f:else>
@@ -667,10 +667,10 @@
                             <f:image src="{gdprManager.backgroundImage}" id="selected-image" alt="" class="back_img" />
                         </div>
                         <f:variable name="defaultImageUri"
-                            value="{f:uri.image(src: 'EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/gdpr-logo-icon.svg')}" />
+                            value="{f:uri.image(src: 'EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/gdpr-logo-icon.svg')}" />
                     </f:else>
                 </f:if>
-                <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/cancel.svg" alt="" class="cancel"
+                <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/cancel.svg" alt="" class="cancel"
                     onclick="resetToDefaultImage('{defaultImageUri}')" />
                 <f:form.textarea property="backgroundImage" id="backgroundImage" cols="40" rows="15" class="d-none" />
                 <br />
@@ -687,16 +687,16 @@
 
                     <label for="backgroundImageColor">
                         <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color"
-                            extensionName="GdprExtensionsComPinterest" />
+                            extensionName="GdprExtensionsComPintBoard" />
                     </label><br />
                 </div>
             </div>
         </div>
 
         <button type="button" class="accordion-toggle">
-            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/dropdown.svg" />
+            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/dropdown.svg" />
             <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.CustomizeBtn"
-                extensionName="GdprExtensionsComPinterest" />
+                extensionName="GdprExtensionsComPintBoard" />
         </button>
         <div class="accordion-content text-content">
             <div class="bold mt-2"> Button Color</div>
@@ -709,7 +709,7 @@
                         class="color-field">
                     <label for="buttonColor">
                         <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color"
-                            extensionName="GdprExtensionsComPinterest" />
+                            extensionName="GdprExtensionsComPintBoard" />
                     </label>
                 </span>
 
@@ -723,7 +723,7 @@
                     </span>
                     <label for="buttonTextColor">
                         <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text_color"
-                            extensionName="GdprExtensionsComPinterest" />
+                            extensionName="GdprExtensionsComPintBoard" />
                     </label>
 
                 </span>
@@ -732,18 +732,18 @@
             <br />
             <div class="bold" for="buttonShape">
                 <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_shape"
-                    extensionName="GdprExtensionsComPinterest" />
+                    extensionName="GdprExtensionsComPintBoard" />
             </div>
             <div class="d-flex">
                 <f:form.select name="buttonShape" property="buttonShape" class="field-style mt-5px w-185px">
                     <f:form.select.option value="0">
-                        <f:translate key="shape.default" extensionName="GdprExtensionsComPinterest" />
+                        <f:translate key="shape.default" extensionName="GdprExtensionsComPintBoard" />
                     </f:form.select.option>
                     <f:form.select.option value="round">
-                        <f:translate key="shape.round" extensionName="GdprExtensionsComPinterest" />
+                        <f:translate key="shape.round" extensionName="GdprExtensionsComPintBoard" />
                     </f:form.select.option>
                     <f:form.select.option value="square">
-                        <f:translate key="shape.square" extensionName="GdprExtensionsComPinterest" />
+                        <f:translate key="shape.square" extensionName="GdprExtensionsComPintBoard" />
                     </f:form.select.option>
                 </f:form.select>
             </div>
@@ -758,15 +758,15 @@
         </div>
 
         <button type="button" class="accordion-toggle">
-            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/dropdown.svg" />
+            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/dropdown.svg" />
             <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.CustomizeMsg"
-                extensionName="GdprExtensionsComPinterest" />
+                extensionName="GdprExtensionsComPintBoard" />
         </button>
         <div class="accordion-content text-content">
             <div class="mt-2">
                 <div class="bold" for="textColor">
                     <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color"
-                        extensionName="GdprExtensionsComPinterest" />
+                        extensionName="GdprExtensionsComPintBoard" />
                 </div>
 
                 <div class="d-flex gap center">
@@ -778,7 +778,7 @@
                             class="color-field">
                         <label for="headingColor">
                             <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.heading_color"
-                                extensionName="GdprExtensionsComPinterest" />
+                                extensionName="GdprExtensionsComPintBoard" />
                         </label>
                     </span>
 
@@ -792,7 +792,7 @@
                         </span>
                         <label for="textColor">
                             <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color"
-                                extensionName="GdprExtensionsComPinterest" />
+                                extensionName="GdprExtensionsComPintBoard" />
                         </label>
 
                     </span>
@@ -800,12 +800,12 @@
                 </div>
                 <div class="bold mt-2" for="heading">
                     <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.heading"
-                        extensionName="GdprExtensionsComPinterest" />
+                        extensionName="GdprExtensionsComPintBoard" />
                 </div>
                 <f:form.textfield property="heading" id="heading" class="my-4-9 pad-3-4 field-style" /><br />
                 <div for="content mt-1" class="bold">
                     <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content"
-                        extensionName="GdprExtensionsComPinterest" />
+                        extensionName="GdprExtensionsComPintBoard" />
                 </div>
                 <f:form.textarea property="content" id="content" cols="40" rows="15"
                     class="my-4-9 pad-3-4 field-style" /><br />
@@ -1045,15 +1045,15 @@
         <div class="panel" id="one-panel">
             <div class="">
                 <label for="heading">
-                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.heading" extensionName="GdprExtensionsComPinterest"/>
+                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.heading" extensionName="GdprExtensionsComPintBoard"/>
                 </label><br />
                 <f:form.textfield property="heading" id="heading" class="my-4-9 pad-3-4 field-style"/><br />
                 <label for="buttonText">
-                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text" extensionName="GdprExtensionsComPinterest" />
+                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text" extensionName="GdprExtensionsComPintBoard" />
                 </label><br />
                 <f:form.textfield property="buttonText" id="buttonText" class="my-4-9 pad-3-4 field-style"/><br />
                 <label for="content">
-                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content" extensionName="GdprExtensionsComPinterest"/>
+                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content" extensionName="GdprExtensionsComPintBoard"/>
                 </label><br />
                 <f:form.textarea property="content" id="content" cols="40" rows="15" class="my-4-9 pad-3-4 field-style"/><br />
             </div>
@@ -1073,7 +1073,7 @@
                 <f:if condition="{gdprManager.backgroundImage} == ''">
                     <f:then>
                         <div class="uploaded-image">
-                            <f:image src="EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/Extension.svg" id="selected-image"
+                            <f:image src="EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/Extension.svg" id="selected-image"
                                      alt=""
                                      class="back_img" />
                         </div>
@@ -1102,7 +1102,7 @@
 
             <div class="bg-color-parent d-block">
                 <label for="backgroundImageColor">
-                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color" extensionName="GdprExtensionsComPinterest"/>
+                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color" extensionName="GdprExtensionsComPintBoard"/>
                 </label><br />
                 <div class="d-flex">
                     <f:form.textfield property="backgroundImageColor" id="backgroundImageColor" class="my-4-9 pad-3-4 colorField field-style w-185px"/>
@@ -1113,7 +1113,7 @@
             </div>
             <br />
             <label for="buttonColor">
-                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color" extensionName="GdprExtensionsComPinterest" />
+                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color" extensionName="GdprExtensionsComPintBoard" />
             </label><br />
             <div class="d-flex">
                 <f:form.textfield property="buttonColor" id="buttonColor" class="my-4-9 pad-3-4 colorField field-style w-185px"/>
@@ -1123,7 +1123,7 @@
             </div>
             <br />
             <label for="textColor">
-                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color" extensionName="GdprExtensionsComPinterest" />
+                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color" extensionName="GdprExtensionsComPintBoard" />
             </label><br />
             <div class="d-flex">
                 <f:form.textfield property="textColor" id="textColor" class="my-4-9 pad-3-4 colorField field-style w-185px"/>
@@ -1133,7 +1133,7 @@
             </div>
             <br />
             <label for="buttonTextColor">
-                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text_color" extensionName="GdprExtensionsComPinterest" />
+                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text_color" extensionName="GdprExtensionsComPintBoard" />
             </label><br />
             <div class="d-flex">
                 <f:form.textfield property="buttonTextColor" id="buttonTextColor" class="my-4-9 pad-3-4 colorField field-style w-185px"/>
@@ -1143,7 +1143,7 @@
             </div>
             <br />
             <label for="buttonShape">
-                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_shape" extensionName="GdprExtensionsComPinterest" />
+                <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_shape" extensionName="GdprExtensionsComPintBoard" />
             </label><br />
             <div class="d-flex">
                 <f:form.select name="buttonShape" property="buttonShape" class="field-style mt-5px w-185px">
@@ -1157,7 +1157,7 @@
         <f:if condition="{googlemaps}">
             <div class="panel" id="three-panel">
                 <label for="mapApi">
-                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_api" extensionName="GdprExtensionsComPinterest"/>
+                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_api" extensionName="GdprExtensionsComPintBoard"/>
                 </label><br />
                 <f:form.textfield property="mapApi" id="mapApi" class="my-4-9 pad-3-4 field-style"/><br />
                 <div id="locations-container" style="border-top: 2px solid #E7E6E6; margin-top: 33px;">
@@ -1165,25 +1165,25 @@
                         <div class="location_field">
                             <div class="field_label">
                         <span style="color: #0e0f0f">
-                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_title" extensionName="GdprExtensionsComPinterest"/>
+                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_title" extensionName="GdprExtensionsComPintBoard"/>
                         </span>
                                 <span style="color: rgba(233, 11, 11, 1)">
                                 *
                         </span>
                             </div>
-                            <input type="text" id="title0" class="field_input" name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][0][title]"
+                            <input type="text" id="title0" class="field_input" name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][0][title]"
                                    value="" />
                         </div>
                         <div class="location_field">
                             <div class="field_label">
                         <span style="color: #0e0f0f">
-                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_description" extensionName="GdprExtensionsComPinterest"/>
+                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_description" extensionName="GdprExtensionsComPintBoard"/>
                         </span>
                                 <span style="color: rgba(233, 11, 11, 1)">
                                 *
                         </span>
                             </div>
-                            <input type="text" id="address0" class="field_input" name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][0][address]"
+                            <input type="text" id="address0" class="field_input" name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][0][address]"
                                    value="" />
                         </div>
                     </div>
@@ -1191,32 +1191,32 @@
                         <div class="coordinate_field">
                             <div class="coordinate_label">
                         <span style="color: #0e0f0f">
-                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_latitude" extensionName="GdprExtensionsComPinterest"/>
+                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_latitude" extensionName="GdprExtensionsComPintBoard"/>
                         </span>
                                 <span style="color: rgba(233, 11, 11, 1)">
                                 *
                         </span>
                             </div>
                             <input type="number" class="coordinate_input" id="latitude0"
-                                   name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][0][lat]" value="" step="any" />
+                                   name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][0][lat]" value="" step="any" />
                         </div>
                         <div class="coordinate_field">
                             <div class="coordinate_label">
                         <span style="color: #0e0f0f">
-                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_longitude" extensionName="GdprExtensionsComPinterest"/>
+                        <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_longitude" extensionName="GdprExtensionsComPintBoard"/>
                         </span>
                                 <span style="color: rgba(233, 11, 11, 1)">
                                 *
                         </span>
                             </div>
                             <input type="number" class="coordinate_input" id="longitude0"
-                                   name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][0][lon]" value="" step="any" />
+                                   name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][0][lon]" value="" step="any" />
                         </div>
                     </div>
                 </div>
 
                 <button id="add-location-btn" file class="add_location">
-                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_addlocation" extensionName="GdprExtensionsComPinterest"/>
+                    <f:translate key="tx_gdprextensionscomyoutube_domain_model_gdprmanager.map_addlocation" extensionName="GdprExtensionsComPintBoard"/>
                 </button>
             </div>
             <script>
@@ -1260,14 +1260,14 @@
                     <label for="title${count}">Title <b style="color:red">*</b></label>
                     <input type="text"
                            id="title${count}"
-                           name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][${count}][title]"
+                           name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][${count}][title]"
                            class="field_input" />
                 </div>
                 <div class="location_field">
                     <label for="address${count}">Description <b style="color:red">*</b></label>
                     <input type="text"
                            id="address${count}"
-                           name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][${count}][address]"
+                           name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][${count}][address]"
                            class="field_input" />
                 </div>
                 </div>
@@ -1277,7 +1277,7 @@
                     <label for="latitude${count}">Latitude <b style="color:red">*</b></label>
                     <input type="number"
                            id="latitude${count}"
-                           name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][${count}][lat]"
+                           name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][${count}][lat]"
                            class="coordinate_input"
                            step="any"
                            data-coordinate-type="latitude" />
@@ -1286,7 +1286,7 @@
                     <label for="longitude${count}">Longitude <b style="color:red">*</b></label>
                     <input type="number"
                            id="longitude${count}"
-                           name="tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager[locations][${count}][lon]"
+                           name="tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager[locations][${count}][lon]"
                            class="coordinate_input"
                            step="any"
                            data-coordinate-type="longitude" />
