@@ -1,51 +1,61 @@
 # GDPR-Extensions-com - Pinterest Board 2xClick Solution
-
 Add Pinterest Board to your website and stay GDPR compliant! Your website viewers will be able to manage their cookie preferences and view the content only if consented.
-
 Stay GDPR compliant when your website is scanned by any Cookie or GDPR Scanner!
 
-## Overview
+## Contributors
+- gdprextensionscom
 
-**GDPR-Extensions-com - Pinterest Board 2xClick Solution** allows you to add content elements and as many Pinterest Board as you want on your website without being flagged on cookie scanners!
+## Tags
+- Pinterest, Privacy, GDPR, Compliance
 
-This extension works in parallel with our GDPR-Extensions.com Consent Manager, where your website viewer can update their cookie preferences any time!
+## Requirements
+- **TYPO3 Version**: 11.5 or higher
+- **PHP Version**: 8.1 or higher
+- **Stable Tag**: 1.0.0
+- **License**: GPLv2 or later
+- **License URI**:  https://www.gnu.org/licenses/gpl-2.0.html
 
-## Without GDPR-Extensions.com Consent Manager
+## Short Description
+Integrate Pinterest boards on your TYPO3 website while staying fully GDPR compliant. The **Pinterest Board 2xClick Solution** ensures that no Pinterest cookies or tracking scripts load until users explicitly consent.
 
-- The Pinterest cookie will not be created, and the user will not be able to view the board until they consent to the content mask that you style and hides the board.
-- Once the user has consented, they are able to view the Pinterest Board, the cookie is created, and the default session duration is 30 days.
-- The user will not be able to update their cookie preferences, and their data will be saved until the session has expired.
+## Description
+The **Pinterest Board 2xClick Solution** by GDPR-Extensions.com enables TYPO3 site owners to integrate Pinterest boards while complying with GDPR regulations. This extension ensures that Pinterest does not load cookies or collect user data until visitors have given explicit consent.
+**Key Features:**
+- **GDPR-Compliant Pinterest Integration** – No cookies or tracking until user consent is granted.
+- **Customizable Content Masking** – Display custom messages, colors, or images before consent is given.
+- **Seamless TYPO3 Integration** – Easily add Pinterest boards to your website.
+- **Works with the GDPR Consent Manager** – Full control over cookie preferences.
+- **Optimized for Performance** – Lightweight and fast-loading.
 
-## With GDPR-Extensions.com Consent Manager
+## Installation
+1. Download the extension from the TYPO3 Extension Repository.
+2. Upload and install it via the TYPO3 Extension Manager.
+3. Add the **Pinterest Board** content element to a page.
+4. Enter the Pinterest board ID in the content element configuration.
+5. Customize the content masking (color, text, image) to match your design.
+6. Save changes and publish the page.
 
-- The GDPR-Extensions-com Consent Manager Typo3 extension is powered by the gdpr-extensions.com dashboard.
-- It scans your website and auto-detects cookies and external sources.
-- It provides you with a content element “Consent Manager” that you can add to your website where all cookies are listed and users can manage the Pinterest 2xClick cookie any time.
-- Website viewers will be able to view the Consent Manager anytime by clicking on the cookie widget which you can always customize its styling, language content, and position.
+## How to Use
+1. **Add a Pinterest Board**  
+   - Copy your Pinterest board ID.  
+   - Add it to the **Pinterest Board 2xClick** content element settings.  
+2. **Customize Content Masking**  
+   - Choose text, colors, or images for the placeholder.  
+3. **Integrate Pinterest Board**  
+   - Add the **Pinterest Board** content element to any page.  
+4. **Manage Consent**  
+   - Users can enable or disable Pinterest content through the GDPR Consent Manager.
 
-## How It Works
+## FAQ
+**Does this extension store any user data?** No, the extension does not store any personal data. It simply prevents Pinterest content from loading until consent is given.
 
-1. **Install GDPR-Extensions-com - Pinterest Board 2xClick Solution Typo3 Extension**
-    - Once the extension is installed successfully, a new tab will appear on your Typo3 project: “GDPR-Extensions-Com Admin”.
-    - You can view the extension customization settings.
+**Do I need a Pinterest account?** Yes, you need a Pinterest account with a board you want to display.
 
-2. **Update Content**
-    - You can update the content heading, body, etc., that you want to show to your website viewers on the content mask hiding the Pinterest board.
+**Can users revoke consent after enabling Pinterest boards?** Yes, users can update their preferences anytime using the GDPR Consent Manager.
 
-3. **Update Styling**
-    - You can also add additional styling to fit your website theme.
+## Upgrade Notice
+**Version 1.0.0**
+- Initial release with full GDPR-compliant Pinterest board integration.
 
-4. **Add Pinterest  Board Content Element**
-    - Visit the page on your project where you want to show Pinterest boards.
-    - You should find a section “GDPR-Extensions-com”.
-    - Select “Pinterest”.
-    - Enter your Pinterest board URL.
-    - Apply additional board customization such as auto play, etc.
-    - Apply additional styling.
-    - Save and publish the page edits.
-
-Enjoy GDPR Conform Pinterest Solution!
-
-## Additional Extensions
-
-Check out other extensions developed by GDPR-extensions.com to add Google, Bing Maps on your website, Google Reviews, Vimeo content, and more! Any cookie or GDPR scanners will not show your Pinterest content as an external source or detect any GDPR issues related to this content.
+## Contact
+For questions or support, reach out to us at support@gdpr-extensions.com.

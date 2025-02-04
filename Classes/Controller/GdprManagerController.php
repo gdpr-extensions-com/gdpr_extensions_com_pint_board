@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace GdprExtensionsCom\GdprExtensionsComPinterest\Controller;
+namespace GdprExtensionsCom\GdprExtensionsComPintBoard\Controller;
 
 
-use GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\MapLocation;
+use GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\MapLocation;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Database\Connection;
@@ -17,7 +17,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- * This file is part of the "gdpr-extensions-com-pinterest" Extension for TYPO3 CMS.
+ * This file is part of the "gdpr-extensions-com-pint-board" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
@@ -34,7 +34,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * gdprManagerRepository
      *
-     * @var \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Repository\GdprManagerRepository
+     * @var \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Repository\GdprManagerRepository
      */
 
     /**
@@ -140,7 +140,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 
         $result = $queryBuilder->execute()->fetchAssociative();
 
-        $pinterestData = $this->gdprManagerRepository->findByExtension_key('gdpr_extensions_com_pinterest')->toArray();
+        $pinterestData = $this->gdprManagerRepository->findByExtension_key('gdpr_extensions_com_pint_board')->toArray();
         return $this->redirect('edit',null,null,['gdprManager' => $pinterestData[0]]);
         $this->view->assign('uploadImageUrl', $uploadImageUrl);
         $this->view->assign('cookieWidgetData', $result);
@@ -152,10 +152,10 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * action show
      *
-     * @param \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager
+     * @param \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function showAction(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager): \Psr\Http\Message\ResponseInterface
+    public function showAction(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('gdprManager', $gdprManager);
         return $this->htmlResponse();
@@ -178,9 +178,9 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * action create
      *
-     * @param \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $newGdprManager
+     * @param \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $newGdprManager
      */
-    public function createAction(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $newGdprManager)
+    public function createAction(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $newGdprManager)
     {
         $this->gdprManagerRepository->add($newGdprManager);
         $this->redirect('list');
@@ -189,11 +189,11 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * action edit
      *
-     * @param \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager
+     * @param \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager
      * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("gdprManager")
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function editAction(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager): \Psr\Http\Message\ResponseInterface
+    public function editAction(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager): \Psr\Http\Message\ResponseInterface
     {
         $siteFinder = GeneralUtility::makeInstance(SiteFinder::class);
         $sites = $siteFinder->getAllSites();
@@ -206,7 +206,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
         $uploadImageUrl = $this->uriBuilder->reset()
             ->uriFor('uploadImage');
         $this->view->assign('uploadImageUrl', $uploadImageUrl);
-        if($gdprManager->getExtensionTitle() == 'gdpr-extensions-com-pinterest-2clicksolution'){
+        if($gdprManager->getExtensionTitle() == 'gdpr-extensions-com-pint-board-2clicksolution'){
             $this->view->assign('pinterest', 1);
         }
         if(strpos($gdprManager->getExtensionTitle(), 'Google-Review') !== false){
@@ -224,14 +224,14 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * action update
      *
-     * @param \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager
+     * @param \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function updateAction(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager) : \Psr\Http\Message\ResponseInterface
+    public function updateAction(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager) : \Psr\Http\Message\ResponseInterface
     {
         $locationsData = [];
-        if($this->request->hasArgument('tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager')){
-            $locationsData = $this->request->getArgument('tx_gdprextensionscompinterest_web_gdprextensionscompinterestgdprmanager')['locations'];
+        if($this->request->hasArgument('tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager')){
+            $locationsData = $this->request->getArgument('tx_gdprextensionscompintboard_web_gdprextensionscompintboardgdprmanager')['locations'];
         }
         elseif ($this->request->hasArgument('locations')){
             $locationsData = $this->request->getArgument('locations');
@@ -257,9 +257,9 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * action delete
      *
-     * @param \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager
+     * @param \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager
      */
-    public function deleteAction(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager $gdprManager)
+    public function deleteAction(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager $gdprManager)
     {
         $this->gdprManagerRepository->remove($gdprManager);
         $this->redirect('list');
@@ -326,9 +326,9 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 
 
     /**
-     * @param \GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Repository\GdprManagerRepository $gdprManagerRepository
+     * @param \GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Repository\GdprManagerRepository $gdprManagerRepository
      */
-    public function injectGdprManagerRepository(\GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Repository\GdprManagerRepository $gdprManagerRepository)
+    public function injectGdprManagerRepository(\GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Repository\GdprManagerRepository $gdprManagerRepository)
     {
         $this->gdprManagerRepository = $gdprManagerRepository;
     }

@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation',
+        'title' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,address',
-        'iconfile' => 'EXT:gdpr_extensions_com_pinterest/Resources/Public/Icons/tx_gdprextensionscomgooglemap_domain_model_maplocation.gif'
+        'iconfile' => 'EXT:gdpr_extensions_com_pint_board/Resources/Public/Icons/tx_gdprextensionscomgooglemap_domain_model_maplocation.gif'
     ],
     'types' => [
         '1' => ['showitem' => 'title, address, lat, lon, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
@@ -96,8 +96,8 @@ return [
 
         'title' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.title',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.title.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.title',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.title.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -107,8 +107,8 @@ return [
         ],
         'address' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.address',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.address.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.address',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.address.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -118,8 +118,8 @@ return [
         ],
         'lat' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lat',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lat.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lat',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lat.description',
             'config' => [
                 'type' => 'input',
                 'size' => 4,
@@ -129,8 +129,8 @@ return [
         ],
         'lon' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lon',
-            'description' => 'LLL:EXT:gdpr_extensions_com_pinterest/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lon.description',
+            'label' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lon',
+            'description' => 'LLL:EXT:gdpr_extensions_com_pint_board/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomgooglemap_domain_model_maplocation.lon.description',
             'config' => [
                 'type' => 'input',
                 'size' => 4,

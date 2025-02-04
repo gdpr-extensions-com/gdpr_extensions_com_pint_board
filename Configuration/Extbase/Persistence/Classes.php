@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 return [
-    GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\GdprManager::class => [
+    GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\GdprManager::class => [
         'tableName' => 'tx_gdprextensionscomyoutube_domain_model_gdprmanager',
     ],
-    GdprExtensionsCom\GdprExtensionsComPinterest\Domain\Model\MapLocation::class => [
+    GdprExtensionsCom\GdprExtensionsComPintBoard\Domain\Model\MapLocation::class => [
         'tableName' => 'tx_gdprextensionscomgooglemap_domain_model_maplocation',
     ],
 ];

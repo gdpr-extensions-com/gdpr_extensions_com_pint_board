@@ -2,7 +2,7 @@
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-{namespace my=GdprExtensionsCom\GdprExtensionsComPinterest\ViewHelpers}
+{namespace my=GdprExtensionsCom\GdprExtensionsComPintBoard\ViewHelpers}
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
 
 <f:layout name="Default" />
@@ -299,7 +299,7 @@
         a.link-action-gdpr{
             text-decoration: none;
         }
-        .tx-gdpr-extensions-com-pinterest #gdpr-extensions-com-cookie-container div.privacy-msg .wraper {
+        .tx-gdpr-extensions-com-pint-board #gdpr-extensions-com-cookie-container div.privacy-msg .wraper {
             width: unset !important;
         }
     </style>
@@ -309,7 +309,7 @@
         <f:variable name="decodedArray" value="{twoClickSol -> v:format.json.decode()}" />
             <div class="gdpr-extensions-com-cookie-container" id="gdpr-extensions-com-cookie-container">
                 <div class="gdprInner" style="width:100%; height:100%; text-align: center;">
-                    <div data-2click-service="gdpr_extensions_com_pinterest" data-2click-type="video" 
+                    <div data-2click-service="gdpr_extensions_com_pint_board" data-2click-type="video" 
                     style="width:100%; height:auto; display: none;">
                 
                         <a data-pin-do="embedBoard" 
@@ -580,7 +580,42 @@
             var v = document.cookie.match('(^|;) ?' + consentCookieName + '=([^;]*)(;|$)');
             return v ? JSON.parse(v[2]) : {};
             }
-
+            <!--  -->
+            function loadPinterestScript() {
+            var f = document.getElementsByTagName('SCRIPT')[0],
+            p = document.createElement('SCRIPT');
+            p.type = 'text/javascript';
+            p.async = true;
+            p.src = '//assets.pinterest.com/js/pinit.js';
+            f.parentNode.insertBefore(p, f);
+            }
+            
+            function removePinterestScript() {
+            var pinterestScript = document.querySelector("script[src='//assets.pinterest.com/js/pinit.js']");
+            if (pinterestScript) {
+            pinterestScript.parentNode.removeChild(pinterestScript);
+            }
+            }
+            // This function checks if the Pinterest cookie is accepted and loads or removes the script accordingly
+            function checkPinterestConsent() {
+            let consentStatuses = getConsentStatuses();
+            if (consentStatuses['gdpr_extensions_com_pinterest_none'] === '1') {
+            loadPinterestScript();
+            } else {
+            removePinterestScript();
+            }
+            }
+            function dispatchLoadEvent() {
+            let event = new Event('load');
+            window.dispatchEvent(event);
+            }
+            
+            document.addEventListener('DOMContentLoaded', function () {
+            checkPinterestConsent();
+            dispatchLoadEvent();
+            });
+            
+            <!--  -->
             // Create div-element within the respective iframe to display the defined data-security message and get consent for loading the iframe content.
 
             function wrap(el, wrapper, type, text, heading, btnColor, textColor, imagePath, imageStatus, bgColor, buttonTextColor, btnText, btnShape) {
@@ -664,7 +699,7 @@
             if (serviceType === 'gdpr_extensions_com_sfc') {
             gdpr_extensions_com_sfc_gdpr(x[i],'add');
             }
-            if (serviceType === 'gdpr_extensions_com_pinterest' || serviceType === 'gdpr_extensions_com_pinterest_profile') {
+            if (serviceType === 'gdpr_extensions_com_pint_board' || serviceType === 'gdpr_extensions_com_pint_prof' || serviceType === 'gdpr_extensions_com_pint_pin') {
             loadPinterestScript();
 
             }
@@ -923,7 +958,7 @@
 
             gdpr_extensions_com_sfc_gdpr(selector[x],'add');
             }
-            if (service === 'gdpr_extensions_com_pinterest') {
+            if (service === 'gdpr_extensions_com_pint_board') {
             loadPinterestScript();
             
             }
