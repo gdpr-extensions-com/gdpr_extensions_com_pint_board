@@ -9,7 +9,7 @@
 ## Requirements
 - **TYPO3 Version**: 11.5 or higher
 - **PHP Version**: 8.1 or higher
-- **Stable Tag**: 1.0.0
+- **Stable Tag**: 1.0.2
 - **License**: GPLv2 or later
 - **License URI**:  https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,9 +51,16 @@ The **Pinterest Board 2xClick Solution** by GDPR-Extensions.com enables TYPO3 si
 
 **Can users revoke consent after enabling Pinterest boards?** Yes, users can update their preferences anytime using the GDPR Consent Manager.
 
-## Upgrade Notice
-**Version 1.0.0**
-- Initial release with full GDPR-compliant Pinterest board integration.
+## Upgrade Notice  
 
+### Version 1.0.0   
+- Initial Release.  
+
+### Version 1.0.1
+- Updated the extension logo.  
+
+### Version 1.0.2
+- Improved and restyled the README.  
+  
 ## Contact
 For questions or support, reach out to us at support@gdpr-extensions.com.
